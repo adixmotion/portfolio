@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADITYA | Creative Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-cyan-accent { color: #00e5ff; }
+        .bg-cyan-accent { background-color: #00e5ff; }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #222; border-radius: 10px; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .video-card {
+            aspect-ratio: 9/16;
+            background: #000;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 20% 30%, rgba(0, 229, 255, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, rgba(112, 0, 255, 0.1) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="hero-gradient">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-[#050505]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-tighter text-white">ADITYA</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#home" class="hover:text-cyan-accent transition">Home</a>
+                <a href="#portfolio" class="hover:text-cyan-accent transition">Portfolio</a>
+                <a href="#videos" class="hover:text-cyan-accent transition">Videos</a>
+                <a href="#services" class="hover:text-cyan-accent transition">Services</a>
+                <a href="#contact" class="hover:text-cyan-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-7xl md:text-9xl font-black mb-6 tracking-tighter italic uppercase text-white">ADITYA</h1>
+                <div class="mb-8 space-y-2">
+                    <p class="text-white text-xl md:text-2xl font-medium">Helping creators & brands grow through content</p>
+                    <p class="text-cyan-accent text-lg font-bold tracking-widest uppercase">Video Editing • Motion Graphics</p>
+                    <p class="text-gray-400 text-lg italic">Let's build something amazing</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#portfolio" class="bg-white text-black px-8 py-3 font-bold rounded-full hover:bg-cyan-accent transition">View Work</a>
+                    <a href="#contact" class="border border-white/20 px-8 py-3 font-bold rounded-full hover:border-cyan-accent transition">Contact Me</a>
+                </div>
+            </div>
+            <div class="flex justify-center md:justify-end">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative w-64 h-64 md:w-96 md:h-96 rounded-full border-4 border-white/10 p-2 bg-[#0a0a0a]">
+                        <img src="https://i.postimg.cc/2L8V9Bj2/aditya2.png" alt="ADITYA" class="w-full h-full rounded-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Me -->
+    <section id="about" class="py-24 px-6 bg-[#080808]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black mb-12 uppercase italic text-white">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-10">
+                        I am a passionate graphic designer and video editor with a sharp eye for modern aesthetics. I help brands and creators stand out through high-impact visuals.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+                        <div class="glass-card p-6 rounded-2xl text-center"><h3 class="text-3xl font-black text-cyan-accent">2+</h3><p class="text-xs text-gray-500 uppercase">Years Exp</p></div>
+                        <div class="glass-card p-6 rounded-2xl text-center"><h3 class="text-3xl font-black text-white">50+</h3><p class="text-xs text-gray-500 uppercase">Clients</p></div>
+                        <div class="glass-card p-6 rounded-2xl text-center"><h3 class="text-3xl font-black text-cyan-accent">100+</h3><p class="text-xs text-gray-500 uppercase">Projects</p></div>
+                    </div>
+                </div>
+                <div class="relative group mx-auto md:ml-auto w-full max-w-md">
+                    <div class="aspect-square overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+                        <img src="https://i.postimg.cc/jndL3JqJ/ADITYA-SHARMA.png" alt="Aditya" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Portfolio -->
+    <section id="portfolio" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <span class="inline-block bg-white px-6 py-2 mb-4">
+                <h2 class="text-4xl md:text-5xl font-black uppercase italic text-black leading-none">Portfolio</h2>
+            </span>
+            <div class="h-1 w-20 bg-cyan-accent"></div>
+        </div>
+    </section>
+
+    <!-- 4. Videos Section -->
+    <section id="videos" class="py-24 px-6 bg-[#080808]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black mb-2 uppercase italic text-white">Videos</h2>
+            <p class="text-cyan-accent font-bold tracking-widest uppercase text-sm mb-12">Instagram Reels</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P1.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1AxLm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjQ4NzEsImV4cCI6NDkzNDc2NDg3MX0.MaPNOfsHbx3QGaDrOpz94d4tp5bJmtGeDNOCOPaZaBg" type="video/mp4"></video></div>
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P2.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1AyLm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjQ5MjEsImV4cCI6NDkzNDc2NDkyMX0.TmBTvAwjV34noO4jhSq7vr_dZDAnNYYIhvaoqZpLS1M" type="video/mp4"></video></div>
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P3.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1AzLm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjQ5NDIsImV4cCI6NDkzNDc2NDk0Mn0.Jm93McRfCl8O-IShEGE9ej19okoXbHan3qnIlTs55VQ" type="video/mp4"></video></div>
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P4.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1A0Lm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjQ5NzIsImV4cCI6NDkzNDc2NDk3Mn0.nQSpboHYa1wsOiaIa1DSwJOHFslzQbjbJJpJn3vxuIk" type="video/mp4"></video></div>
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P5.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1A1Lm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjQ5ODgsImV4cCI6NDkzNDc2NDk4OH0.dSSF91bCs2ydHIYsF7rfidUUo7eWYgOLxv8mEXeoBMo" type="video/mp4"></video></div>
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P6.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1A2Lm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjUwMDIsImV4cCI6NDkzNDc2NTAwMn0.oC0-x3S_8UgTFMQ1r8oq2D51x8CncoWt_PryuKfJ4Fo" type="video/mp4"></video></div>
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P7.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1A3Lm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjQ1MDE2LCJleHAiOjQ5MzQ3NjUwMTZ9.H-iAhS04M-T9lph0w0UsT48-m6vHaKcjHuGZl5D1swQ" type="video/mp4"></video></div>
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P8.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1A4Lm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjQ1MDM0LCJleHAiOjQ5MzQ3NjUwMzR9.yJplUNCxOxu_jmgQF6x141MoQ1sratniVfF3TEsPoxU" type="video/mp4"></video></div>
+                <div class="video-card"><video loop muted playsinline controls><source src="https://orwuwvrokvvvjpqmcgem.supabase.co/storage/v1/object/sign/Porfolio/Portfolio%20Videos/P9.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xMjFkZWZhZS1mNjIyLTRhNTYtOGY0Mi0yYjExNjRmNDU1NDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb3Jmb2xpby9Qb3J0Zm9saW8gVmlkZW9zL1A5Lm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODExNjQ1MDUyLCJleHAiOjQ5MzQ3NjUwNTJ9.AbNXMkzPyvSa4YUCGocMg61ggW-cSwd6LViPsL1G8KM" type="video/mp4"></video></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Services Section -->
+    <section id="services" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="inline-block bg-white px-8 py-3 mb-16 shadow-xl">
+                <h2 class="text-4xl md:text-5xl font-black uppercase italic text-black leading-none">Services</h2>
+            </span>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-10 rounded-3xl hover:bg-cyan-accent transition-colors duration-300 shadow-lg">
+                    <h3 class="text-xl font-bold text-black uppercase tracking-tighter leading-tight">Brand Identity</h3>
+                </div>
+                <div class="bg-white p-10 rounded-3xl hover:bg-cyan-accent transition-colors duration-300 shadow-lg">
+                    <h3 class="text-xl font-bold text-black uppercase tracking-tighter leading-tight">Animations</h3>
+                </div>
+                <div class="bg-white p-10 rounded-3xl hover:bg-cyan-accent transition-colors duration-300 shadow-lg">
+                    <h3 class="text-xl font-bold text-black uppercase tracking-tighter leading-tight">Video Editing</h3>
+                </div>
+                <div class="bg-white p-10 rounded-3xl hover:bg-cyan-accent transition-colors duration-300 shadow-lg">
+                    <h3 class="text-xl font-bold text-black uppercase tracking-tighter leading-tight">Motion Graphics</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-[#080808]">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-black mb-6 italic uppercase text-white">Let's Work Together</h2>
+                <p class="text-gray-400 mb-8 leading-relaxed">Have a project in mind? Let's build something amazing together.</p>
+                <div class="mb-8">
+                    <span class="text-xs uppercase tracking-widest text-gray-500 block mb-1">Email Me</span>
+                    <a href="mailto:contact.aditya1008@gmail.com" class="text-xl font-bold hover:text-cyan-accent transition">contact.aditya1008@gmail.com</a>
+                </div>
+            </div>
+            <form class="space-y-4">
+                <input type="text" placeholder="Name" class="w-full bg-[#111] border border-white/5 rounded-xl p-4 outline-none focus:border-cyan-accent transition text-white">
+                <input type="email" placeholder="Email" class="w-full bg-[#111] border border-white/5 rounded-xl p-4 outline-none focus:border-cyan-accent transition text-white">
+                <textarea rows="4" placeholder="Message" class="w-full bg-[#111] border border-white/5 rounded-xl p-4 outline-none focus:border-cyan-accent transition text-white"></textarea>
+                <button type="submit" class="w-full bg-cyan-accent text-black font-black py-4 rounded-xl uppercase tracking-widest hover:bg-cyan-400 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-xs border-t border-white/5">
+        <p>© 2024 ADITYA. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
